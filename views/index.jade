@@ -1,0 +1,16 @@
+extend layout
+
+block content
+	h1 Add new Contact
+	form(method="POST",action="/newContact")
+		p Name:
+		input#title(type="text",name='name') 
+		p Phone:
+		input#title(type="text",name='phone')
+		p: button(type="submit") Add new Contact
+
+	h1 Add new db
+	form(method="POST",action="/createDb") 
+			p Phone:
+			input#title(type="text",name='dbname')
+			p: button(type="submit") Add new Db
